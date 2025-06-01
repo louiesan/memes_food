@@ -738,14 +738,14 @@
   .bg-\[url\(\'\.\.\/public\/assest\/menbg\.jpg\'\)\] {
     background-image: url('../public/assest/menbg.jpg');
   }
-  .bg-\[url\(\'\.\.\/public\/assest\/plat\.png\'\)\] {
-    background-image: url('../public/assest/plat.png');
+  .bg-\[url\(\'\.\.\/public\/assest\/plat\.webp\'\)\] {
+    background-image: url('../public/assest/plat.webp');
   }
-  .bg-\[url\(\'\/public\/assest\/menbg\.jpg\'\)\] {
-    background-image: url('/public/assest/menbg.jpg');
+  .bg-\[url\(\'\.\/public\/assest\/menbg\.jpg\'\)\] {
+    background-image: url('./public/assest/menbg.jpg');
   }
-  .bg-\[url\(\'\/public\/assest\/plat\.png\'\)\] {
-    background-image: url('/public/assest/plat.png');
+  .bg-\[url\(\'\.\/public\/assest\/plat\.webp\'\)\] {
+    background-image: url('./public/assest/plat.webp');
   }
   .from-zinc-900 {
     --tw-gradient-from: var(--color-zinc-900);
