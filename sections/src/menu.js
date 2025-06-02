@@ -55,4 +55,35 @@ function slides() {
   ind++;
 }
 
-setInterval(slides, 8000);
+let bliih = setInterval(slides, 8000);
+
+currr.forEach((cur, indd) => {
+  cur.addEventListener("click", () => {
+    ind = indd;
+    currr.forEach((el, index) => {
+      if (ind === pngArr.length) ind = 0;
+      if (ind === index) {
+        el.classList.replace("bg-white", "bg-emerald-400");
+      } else {
+        el.classList.replace("bg-emerald-400", "bg-white");
+      }
+    });
+    tiTle.classList.remove("animate-bingo");
+    void tiTle.offsetWidth;
+    tiTle.classList.add("animate-bingo");
+    tiTle.innerHTML = pngArr[indd].food;
+
+    desc.classList.remove("animate-bingo");
+    void desc.offsetWidth;
+    desc.classList.add("animate-bingo");
+    desc.innerHTML = pngArr[indd].para;
+
+    img.classList.remove("animate-bingo");
+    void img.offsetWidth;
+    img.setAttribute("src", pngArr[indd].png);
+    img.classList.add("animate-bingo");
+    clearInterval(bliih);
+    setInterval(slides, 8000);
+    ind = indd + 1;
+  });
+});
